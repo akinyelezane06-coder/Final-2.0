@@ -1,0 +1,232 @@
+/* ========== GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #243e63;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.btn-primary {
+  background: #6415ff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #4c0fd6;
+}
+
+/* ========== NAVBAR ========== */
+header {
+  padding: 30px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+  color: #6415ff;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #243e63;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #6415ff;
+}
+
+/* ========== HERO ========== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #7c8ba1;
+}
+
+.email-form {
+  margin-top: 30px;
+  display: flex;
+}
+
+.email-form input {
+  padding: 14px 20px;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.email-form button {
+  border-radius: 0 50px 50px 0;
+}
+
+.hero-img {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+/* ========== FEATURES ========== */
+.features {
+  text-align: center;
+  background: #f7fafc;
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.features p {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #7c8ba1;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.feature {
+  flex: 1;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: #e9d8fd;
+  color: #6415ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ========== PRICING ========== */
+.pricing {
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.pricing-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.plan {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.plan h3 {
+  font-size: 22px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.plan ul {
+  list-style: none;
+  margin-top: 20px;
+  color: #7c8ba1;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.plan.featured {
+  border: 2px solid #6415ff;
+  box-shadow: 0 20px 40px rgba(100,21,255,0.15);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 60px 0;
+  margin-top: 80px;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .feature-grid,
+  .pricing-grid {
+    flex-direction: column;
+  }
+}
